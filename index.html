@@ -214,7 +214,13 @@ body{background:#f2ebe2;color:var(--ink)}
 @media(max-width:680px){.hero-art{opacity:.38}}
 @media print{.hero-art{top:0;right:0;bottom:0;height:100%;width:auto;opacity:.64}}
 
-/* Enlarged typography for weather tip, 01-04 glance cards, and day itinerary table */
+/* Enlarged typography for hero subtitle/badges, weather tip, 01-04 glance cards, and day itinerary table */
+.hero>.eyebrow{font-size:22px!important;letter-spacing:3.5px!important}
+.hero>.eyebrow:before{width:34px!important;height:2px!important}
+.hero>h1{font-size:clamp(44px,5vw,66px)!important;max-width:720px!important;margin:18px 0 14px!important}
+.hero>p{font-size:26px!important;font-weight:600!important;max-width:760px!important;line-height:1.45!important;text-shadow:0 2px 12px rgba(45,18,10,.35)}
+.hero>.facts{gap:12px!important;margin-top:26px!important;max-width:860px}
+.hero .fact{font-size:20px!important;font-weight:600!important;padding:10px 18px!important;border-radius:12px!important;background:rgba(68,26,16,.38)!important;border:1.5px solid rgba(255,238,213,.58)!important}
 .weather-tip{font-size:21px!important;padding:14px 18px!important;gap:14px!important;line-height:1.5!important}
 .weather-tip .weather-icon{font-size:32px!important}
 .route-glance{gap:12px!important}
@@ -228,6 +234,9 @@ body{background:#f2ebe2;color:var(--ink)}
 .schedule-table td:first-child,.schedule-table td:nth-child(2){font-size:20px!important}
 .mode{font-size:17px!important;padding:6px 13px!important}
 @media(max-width:770px){
+  .hero>.eyebrow{font-size:16px!important}
+  .hero>p{font-size:18px!important}
+  .hero .fact{font-size:14px!important;padding:8px 12px!important}
   .weather-tip{font-size:16px!important}
   .glance-number{font-size:26px!important}
   .glance-name{font-size:16px!important}
